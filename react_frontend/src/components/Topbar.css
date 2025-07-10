@@ -1,0 +1,51 @@
+.topbar {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-secondary, #161e27);
+  color: var(--text-primary, #fff);
+  border-bottom: 1px solid var(--border-color, #222);
+  transition: background 0.18s;
+  padding: 0 26px 0 18px;
+  z-index: 20;
+  position: relative;
+}
+.tb-btn {
+  background: transparent;
+  color: var(--text-secondary, #14C0FF);
+  border: none;
+  outline: none;
+  font-size: 1.07em;
+  padding: 8px 14px;
+  margin: 0 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.tb-btn:hover,
+.tb-btn:focus {
+  background: var(--accent, #FC6E20);
+  color: #fff;
+}
+.topbar-left, .topbar-right, .topbar-center {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.topbar-center {
+  flex: 1;
+  justify-content: center;
+}
+.user-profile {
+  margin-left: 8px;
+}
+.user-avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 42%;
+  border: 2px solid var(--accent, #FC6E20);
+  box-shadow: 0 0 0.6px var(--accent, #FC6E20);
+  object-fit: cover;
+  background: #333;
+}

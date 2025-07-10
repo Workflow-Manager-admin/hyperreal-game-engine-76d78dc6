@@ -1,0 +1,28 @@
+.collab-banner {
+  background: var(--accent, #FC6E20);
+  color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  position: relative;
+  border-bottom: 3px solid var(--bg-secondary, #161e27);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collab-close {
+  position: absolute;
+  right: 15px;
+  top: 6px;
+  background: rgba(0,0,0,0.09);
+  border: none;
+  color: #fff;
+  font-size: 1.18em;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px 8px 2px 8px;
+}

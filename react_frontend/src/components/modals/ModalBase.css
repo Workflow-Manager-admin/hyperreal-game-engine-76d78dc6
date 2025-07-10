@@ -1,0 +1,53 @@
+/* Modal Basics */
+.modal-backdrop {
+  position: fixed;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(19,25,30,0.72);
+  z-index: 1111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-window {
+  background: #161c22;
+  color: #fafbfd;
+  min-width: 310px;
+  min-height: 170px;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 12px 48px 0 rgba(20,24,38,.42);
+  font-size: 1.08em;
+  max-width: 95vw;
+  max-height: 88vh;
+  overflow: hidden;
+  position: relative;
+}
+.modal-window.large {
+  width: 690px;
+  min-height: 430px;
+}
+.modal-header {
+  padding: 14px 22px 9px 18px;
+  font-weight: bold;
+  font-size: 1.09em;
+  color: #15B5F0;
+  border-bottom: 2px solid var(--accent, #FC6E20);
+  background: #121820;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-body {
+  padding: 28px 22px 28px 22px;
+  margin: 0;
+}
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.13em;
+  cursor: pointer;
+  padding: 2px 8px;
+  opacity: 0.7;
+}
+.close-btn:hover { opacity: 1; }
